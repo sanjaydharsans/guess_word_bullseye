@@ -1,0 +1,107 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url('https://www.hitbullseye.com/images/school.svg');
+}
+.box{
+  width: 430px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.box h1{
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.box .box-content{
+  margin: 25px 25px 35px;
+}
+.box-content .feed{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feed input{
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ba98c;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #B5B5B5;
+}
+.in {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+.feed input:first-child{
+  margin-left: 0px;
+}
+.box-content .other{
+  margin: 20px 0 25px;
+}
+.other p{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.box-content .reset{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #1BB295;
+  transition: all 0.3s ease;
+}
+.box-content .reset:hover{
+  background: #18a589;
+}
+
+@media screen and (max-width: 460px) {
+  .box {
+    width: 100%;
+  }
+  .box h1{
+    font-size: 22px;
+    padding: 16px 20px;
+  }
+  .box .box-content{
+    margin: 25px 20px 35px;
+  }
+  .feed input{
+    height: 51px;
+    width: 50px;
+    margin: 3px;
+    font-size: 22px;
+  }
+  .other p{
+    font-size: 17px;
+  }
+  .box-content .reset{
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
